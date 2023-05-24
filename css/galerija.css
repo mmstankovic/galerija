@@ -1,0 +1,97 @@
+@keyframes fade_in_prezenter {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in-effect {
+    animation-name: fade_in_prezenter;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fade_out_prezenter {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+#galerija-prethodna {
+    position: fixed;
+    top: calc(50vh - 30px);
+    left: 20px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    font-size: 61px;
+    z-index: 2;
+}
+#galerija-sledeca {
+    position: fixed;
+    top: calc(50vh - 30px);
+    right: 20px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    font-size: 61px;
+    z-index: 2;
+}
+
+.fade-out-effect {
+    animation-name: fade_out_prezenter;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.moja-galerija {
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.galerija-thumbnail {
+    display: block;
+    border: 1px solid black;
+    padding: 5px;
+    margin: 2px;
+}
+#galerija-prezentacija {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.7);
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+   
+}
+#glavna-slika {
+    max-width: 800px;
+    max-height: 600px;
+}
+#zatvori-prezentaciju {
+    position: fixed;
+    top: 5px;
+    right: 5px;
+    background-color: transparent;
+    color: white;
+    font-size: 60px;
+    border: none;
+    outline: none;
+    z-index: 2;
+}
+
+#glavni-naslov {
+    color: white;
+}
